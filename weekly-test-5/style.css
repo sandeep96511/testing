@@ -1,0 +1,333 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(245, 245, 245, 0.784);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.519);
+    /* z-index: 1; */
+    position: sticky;
+    top: 0;
+}
+.nav-logo{
+    padding: 1rem 3rem;
+}
+.nav-logo img{
+    height: 4rem;
+    width: 15rem;
+
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    gap: 1rem;
+    text-transform: uppercase;
+}.nav-links li, span{
+    list-style-type: none;
+    cursor: pointer;
+    &:hover{
+        color: rgb(255, 74, 50);
+    }
+}
+.nav-icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.container{
+    /* position: relative; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .photos{
+    overflow: hidden;
+    height: 90vh;
+    width: 50%;
+}
+.bg-image{
+    /* overflow: hidden; */
+    /* object-fit: cover; */
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    /* -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out; */
+    /* transition-property: transform; */
+    transition-duration: 0.3s;
+    /* transition-timing-function: ease-in; */
+    
+}
+.container img:hover{
+    /* -webkit-transform: scale(1.3); */
+	transform: scale(1.3);
+    
+}
+/* .overlay-cont{
+    position: absolute;
+    transform: translate(50%, 50%);
+    z-index: 1000;
+} */
+
+.black-bar{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    gap: 50px;
+    padding: 1%;
+}
+.text-info{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;   
+}
+.text-info p, h4{
+    margin-top: 1rem;
+}
+.text-info a{
+    text-decoration: none;
+    color : rgb(255, 104, 84);
+}
+.diveder{
+    color: rgb(207, 207, 207);
+    margin-top: 2rem;
+    width: 10%;
+    margin-left: 45%;
+}
+/* -----row col section */
+.why-sec{
+    margin-top: 2rem;
+}
+.row{
+    padding: 0 12rem;
+    width: calc(100% - 20px);
+    display: flex;
+
+}
+.col{
+    flex-shrink: 1;
+    width: 50%;
+    overflow: hidden; 
+    
+}.col img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden; 
+    transition: transform 0.3s; 
+}
+.col img:hover{
+	transform: scale(1.3);
+    
+}
+.text-sec{
+    padding: 2rem 2rem;
+}
+.col-button{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: rgb(245, 65, 41);
+    border-radius: 12%/50%;
+    &:hover{
+        background-color: rgb(96, 96, 96);
+    }
+}
+/* ------image-section-withiframe */
+.image-sec1{
+    height: 90vh;
+    background-image: url(https://boostedusa.com/cdn/shop/files/boosted-rev-display_2000x.jpg?v=1646160921);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    width: 100%;
+    text-align: center;
+}
+.image-with-iframe{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.image-sec2{
+    height: 80vh;
+    background-image: url(https://boostedusa.com/cdn/shop/files/evolve-skateboards-1_2000x.jpg?v=1646161047);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items:center ;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.iframe{
+    padding: 2rem 15vh;
+}
+.iframe .youtube{
+    width: 100%;
+    min-height: 60vh;
+}
+.iframe .youtube iframe{
+    min-height: 80vh;
+    width: 100%;
+}
+/* ------accessories----- */
+.accessories{
+    width: 100%;
+}
+.accessories h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.accessories .row-accessories-items{
+    display: flex;
+    overflow-x: scroll;
+}
+.accessories-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+/* ------newsletter sectiion */
+.newsletter{
+    width: 100%;
+    background-color:rgb(229, 229, 229);
+}
+.news-letter-cont{
+    padding: 2rem 15vh;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    margin: auto;
+    row-gap: 1rem;
+   
+
+}
+.news-letter-cont input{
+    width: 100%;
+    padding: 1rem;
+}
+.news-letter-cont button{
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(255, 104, 84);
+}
+.news-letter-cont h1{
+    font-size: 1.7rem;
+}
+.news-letter-cont label{
+    align-self: flex-start;
+    font-weight: 600;
+    &::before{
+        content: '*';
+        color: red;
+    }
+}
+.news-letter-cont .news-footer{
+    font-size: .7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------footersection---- */
+.footer{
+    height: 80vh;
+    width: 100%;
+    /* display: flex; */
+
+}
+.row1{
+    height: 50%;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(247, 247, 247);
+    background-color: rgb(0, 0, 0);
+    gap: 100px;
+}
+.row1>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 25%;  
+}
+.row1 div img{
+    height: 4rem;
+    width: 4rem;
+}
+.row2>div{
+    width:30%
+}
+.row2 {
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem;
+   
+}
+.row2 ul li{
+    list-style-type: none;
+    line-height: 1.3rem;
+}
+.row2 h1{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.row2 p{
+    margin-bottom: 1rem;
+
+}
+.footer-bottom{
+    display: flex;
+    padding: 1rem 5rem;
+    background-color: white;
+}
+.footer-bottom-left{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+.footer-bottom-left a{
+    text-decoration: none;
+    color: rgb(255, 104, 84);
+}
+.footer-bottom-right{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
