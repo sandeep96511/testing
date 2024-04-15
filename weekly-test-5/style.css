@@ -46,7 +46,7 @@
     display:flex;
     flex-wrap: wrap; 
 }
-.image{
+.bg-image{
     
 position: relative;
 width: calc(100%/2);
@@ -54,7 +54,7 @@ overflow: hidden;
 
 
 }
-.image>img{
+.bg-image>img{
     width: 100%;
     object-fit: cover;
     height: 100%;
@@ -63,7 +63,7 @@ overflow: hidden;
    
 }
 
-.image-overlay{
+.bg-image-overlay{
     width: 100%;
     position: absolute;
     top: 50%;
@@ -74,7 +74,7 @@ overflow: hidden;
    
     
 }
-.image-overlay>img{
+.bg-image-overlay>img{
   width: 100%;
  max-width: 550px;
   height: auto;
@@ -82,13 +82,13 @@ overflow: hidden;
   margin-bottom: 20px;
   
 }
-.image-overlay p{
+.bg-image-overlay p{
     font-size: 1.1rem;
     font-weight: 400;
     color: black;
    }
 
-.image:hover img{
+.bg-image:hover img{
  transform: scale(1.1);
 
 } 
@@ -247,10 +247,21 @@ overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;  
+}
+.accessories .accessories-card{
+    width: 20%;
+    flex-shrink: 0;
+}
+.accessories-card .image{
+    width: 100%;
     
 }
+.accessories img{
+    width: 60%;
+    height: auto;
+}
+
 
 /* ------newsletter sectiion */
 .newsletter{
